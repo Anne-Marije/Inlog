@@ -1,5 +1,5 @@
-function knop(){
-    alert();
-    
-    
+function knop(elmnt,clr) {
+    elmnt.style.color = clr;
 }
+    
+    

@@ -12,7 +12,7 @@
     
     <body>
       
-        <table onclick=knop()>
+        <table onclick=knop(this,'blue')>
   <tr>
     <th> R </th>
     <th> E </th>
