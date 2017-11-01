@@ -11,7 +11,19 @@
     </head>
     
     <body>
-      
+     <?php
+     
+     $regenboog = array("R","E","G","E","N","B","O","O","G");
+     
+           
+             
+     for ($x=0;$x<9;$x++){
+         
+     
+     echo "<button type=button>".$regenboog[$x]."</button>";
+     
+     }
+     ?>
         <table onclick=knop(this,'blue')>
   <tr>
     <th> R </th>
