@@ -1,0 +1,59 @@
+/*body {
+    background: red;
+    -webkit-animation: mymove 5s infinite;  Chrome, Safari, Opera 
+    animation: mymove 5s infinite;
+}
+
+ Chrome, Safari, Opera 
+@-webkit-keyframes mymove {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+ Standard syntax 
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}*/
+
+
+
+tr:hover{background-color:red;}
+
+/*th:nth-child(1){background-color: red;}
+th:nth-child(2){background-color: blueviolet;}
+th:nth-child(3){background-color: blue;}
+th:nth-child(4){background-color: aqua;}
+th:nth-child(5){background-color: green;}
+th:nth-child(6){background-color: yellow;}
+th:nth-child(7){background-color: orange;}
+th:nth-child(8){background-color: red;}
+th:nth-child(9){background-color: blueviolet;}*/
+
+th:hover{background-color:pink;}
+
+/*table {
+  overflow: hidden;
+}
+
+tr:hover {
+  background-color: pink;
+}
+
+td, th {
+  position: relative;
+}
+td:hover::after,
+th:hover::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
+}*/
+
+
+//tr:hover{background:#ffff99;}
