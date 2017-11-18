@@ -15,7 +15,7 @@
     
     <body>
         <div class="center">
-            <form method="post" action="INLOG.php">
+            <form method="post" action="Weekopdracht.php">
             
             <input type="tekst" name="username" value="" placeholder="Gebruikersnaam"><br>
             <input type="password" name="password" value="" placeholder="Wachtwoord"><br>
