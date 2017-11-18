@@ -23,6 +23,7 @@
      echo "<button type=button>".$regenboog[$x]."</button>";
      
      }
+     
      ?>
         <table onclick=knop(this,'blue')>
   <tr>
