@@ -4,37 +4,42 @@ $databasename="inlogsysteem";
 $username="root";
 $password="";
 
-//connectie naar database mysql
 $conn= new mysqli($host, $username, $password, $databasename);
 
 $naam=$_POST['username'];
 $wachtwoord=$_POST['password'];
 
+
+
 $sql="select * from `gebruikers` where `gebruikersnaam` = '$naam' and `Wachtwoord` = '$wachtwoord' ";
-$conn->query($sql);
+$result = $conn->query($sql);
 
 
-//haalt gebruikersnaam en wachtwoord van inlogpagina
+$selecteer= mysqli_query($conn, $sql)
+        or die ("database niet bereikbaar".mysqli_error());
+   
+$num = mysqli_num_rows($result);
 
+if ($num == 1){
 
-print_r($naam);
-print_r($wachtwoord);
-
-
-        
-//haalt uit database informatie
-//$selecteer= mysqli_query("select * from `gebruikers` where `gebruikersnaam` = '$naam' and `Wachtwoord` = '$wachtwoord' ")
-//            or die('het ging mis');
+    echo 'welkom';
+}else{
+       
+        echo 'verkeerde wachtwoord';
+    }
+    
+    
 
 //kijkt of wachtwoord en gebruikersnaam kloppen
-
-$controleer= mysqli_fetch_array($sql);
-if($controleer['gebruikersnaam'] == $naam && $controleer['Wachtwoord']==$wachtwoord){
-    echo "Welkom";
-    
-}else{
-    echo "Mislukt";
-}
+//
+//$controleer= mysqli_fetch_array($selecteer);
+//
+//if($controleer['gebruikersnaam'] == $naam && $controleer['Wachtwoord'] == $wachtwoord){
+//    echo "Welkom";
+//    
+//}else{
+//    echo "Mislukt";
+//}
 
 ?>
 

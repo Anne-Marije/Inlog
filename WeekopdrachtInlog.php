@@ -19,6 +19,7 @@
             
             <input type="tekst" name="username" value="" placeholder="Gebruikersnaam"><br>
             <input type="password" name="password" value="" placeholder="Wachtwoord"><br>
+            
             <input type="submit" name="login" value="Inloggen"><br>
             <a href="">Wachtwoord vergeten</a>
             
